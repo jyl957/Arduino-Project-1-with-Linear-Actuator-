@@ -87,13 +87,9 @@ int vala;
   else {
     Serial.print(distance);
     Serial.println(" cm");
-
-//    delay(300);
   }
   
-  
   delay(500);                               
-
 
 
     valb = analogRead(cds);            // Determine the voltage from A0 pin after 500ms
@@ -108,17 +104,12 @@ int vala;
     // in steps of 1 degree
     myservo.write(pos);                // Tell linear actuator to go to position in variable 'pos'
   }
-
-
       }
 
-
-
-       if(vald<-300){                  // If the vald is negative and smaller than -300, it means that the output of SR-Latch is decreased to LOW voltage
+       if(vald<-400){                  // If the vald is negative and smaller than -300, it means that the output of SR-Latch is decreased to LOW voltage
      
   for (pos = 90; pos >= 0; pos -= 1) { // The linear actuator goes from 90 degrees to 0 degrees
     myservo.write(pos); 
-
   }
        }
 }
