@@ -7,11 +7,11 @@
 
 #define trigPin 10                   // Connect to Trig pin of HC-SR04
 #define echoPin 13                   // Connect to Echo pin of HC-SR04
-#define abcdPin 11                   // Connect to pin6(Set) of SR-Latch 
-#define shdoPin 9                    // Connect to pin5(Reset) of SR-Latch 
+#define abcdPin 11                   // Connect to pin 15 (Set) of SR-Latch 
+#define shdoPin 9                    // Connect to pin 14 (Reset) of SR-Latch 
 
 float duration, distance;
-const byte cds = A0;          // A0 is connected to pin7(Output) of SR-Latch
+const byte cds = A0;          // A0 is connected to pin 13 (Output) of SR-Latch
 
 Servo myservo;                // Create servo object to control the linear actuator
  
